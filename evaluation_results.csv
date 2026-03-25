@@ -1,0 +1,15 @@
+agent,response,time,rating
+Basic,"Current weather in Cairo:
+Temperature: 16.2°C
+Condition: Partly cloudy
+Humidity: 63%
+Wind: 33.8 kph",0.4291,5
+Chain of Thought,"Current weather in Cairo:
+Temperature: 16.2°C
+Condition: Partly cloudy
+Humidity: 63%
+Wind: 33.8 kph",0.2403,5
+Advanced,"Simulated Advanced Response:
+Cairo: 16.2°C, Partly cloudy
+This is a multi-step structured response.
+Advanced agent would normally use parallel tools.",0.2096,5
