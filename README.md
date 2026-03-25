@@ -96,4 +96,13 @@ Conclusion
 
 This project helped me understand how conversational systems can integrate external tools, manage multi-step tasks, and handle real-world constraints like API limits.
 
+#bonus discussion
+
+Parallel tool execution improves performance the most when multiple independent requests are needed. For example, when comparing weather in different cities, each city can be queried separately at the same time instead of waiting for one request to finish before starting the next. This reduces the total execution time.
+
+In my measurements, I observed that parallel execution was faster than sequential execution. The total time for parallel processing was lower because multiple tool calls were handled simultaneously, while sequential execution required waiting for each call to complete before moving to the next one. This resulted in a noticeable speedup.
+
+However, multi-step reasoning is still necessary even when parallel execution is available. Some tasks depend on previous results, such as calculating temperature differences or making comparisons. In these cases, the system must first retrieve the data and then process it step by step. Therefore, parallel execution is most useful for independent tasks, while multi-step reasoning is required for dependent or more complex queries.
+
+
 It also highlighted the importance of designing systems that are both functional and user-friendly.
